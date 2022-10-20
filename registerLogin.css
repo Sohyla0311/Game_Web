@@ -1,0 +1,104 @@
+body {
+    background-color :#445768
+        }
+
+        /* 菜单背景块 */
+        ul {    
+            list-style-type: none;
+             margin:-15px;
+             padding:20px;            
+             overflow: hidden; /* 隐藏多出来的部分 */
+             background-color : #c9d4db    
+            }
+
+        /* 菜单排序 */
+        li { float: left; } 
+ 
+       
+         /* 菜单外部选项 */
+        li a, .dropbtn {
+            border:none;
+            padding: 15px 100px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #445768;
+            text-decoration: none;
+            display: inline-block;  /* 往下面添加 */
+        }
+
+        /* 外部菜单划过背景色 */
+        li a:hover, .dropdown:hover .dropbtn { background-color: #f0f3f5; }
+        
+        /* 没有区别？？*/
+        li.dropdown { display: inline-block; }
+
+        
+            
+        /* 下拉菜单 */
+        .dropdown-content { 
+            display: none;
+            position: absolute;
+            background-color: #c9d4db;
+            min-width: 100px; /* 下拉菜单宽度 */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;  /* 没有区别？？*/
+          }
+          
+        /* 内部菜单链接 */
+        .dropdown-content a { 
+            color: #445768;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          
+        /* 内部菜单划过背景色 */
+        .dropdown-content a:hover {background-color: #f0f3f5;}
+        
+        /* 让内部菜单出现在下方 */
+        .dropdown:hover .dropdown-content { display: block;}
+
+/*--------------------- --------------------- --------------------- ---------------------*/
+
+#login{ /* 位置 */
+  display: block;
+  margin-left: 38%;
+  margin-top: 20%;
+}
+
+#login [type=email], 
+#login [type=password] {
+    background-color:#c9d4db;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #c9d4db;
+    border-left: 5px solid #c9d4db;
+    background-color: #445768;
+    padding: 6px;
+    border-radius: 4px;
+    
+}
+
+#login [type=submit] {
+  background-color:#c9d4db; 
+  color: #445768;
+  font-size: 15px;
+  border: 0px solid ;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+::placeholder { /* 占位符 */
+  color:#c9d4db;
+  font-size: 15px;
+}
+
+input:focus::-webkit-input-placeholder {  /* 点击时占位符消失 */
+  color:transparent;
+}
+
+input, select, textarea{ /* 内容颜色 */
+  color: #c9d4db;
+}
